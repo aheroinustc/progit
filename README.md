@@ -65,19 +65,9 @@ Version 2.1.15, 2018-07-27
     git init
     git add README.md LICENSE
     git commit -m "first commit"
-    git remote add origin https://github.com/aheroinustc/progit.git
+    git remote add origin git@github.com:aheroinustc/progit.git
     git push -u origin master
     
-首次`push`时，因为采取的是https协议，会跳出github的登录验证，
-
-因为众所周知的原因，需要挂上代理登录，
-
-如果有开启账户二次验证，请输入验证码。
-
-可以在Github设置/Developer settings/Personal access tokens中管理访问授权，
-
-需要时删除无效的tokens。
-
 以后可以在本地继续提交，下次推送时，直接执行`git push`即可，
 
 基本上不需要代理即可成功推送。
