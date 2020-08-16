@@ -44,7 +44,7 @@ Version 2.1.15, 2018-07-27
     $ ssh-keygen -t rsa -C  "Your Email"
     $ cat  ~/.ssh/id_rsa.pub
 ```
-默认在用户主目录生成一对key。
+默认在用户主目录`.ssh`下生成一对key。
 
 将查看的`id_rsa.pub`内容复制，添加到github上的SSH keys。
 
