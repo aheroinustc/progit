@@ -1,4 +1,9 @@
-markdown扩展语法介绍
+---
+title: "markdown扩展语法介绍"
+output: pdf_document
+---
+
+**markdown扩展语法介绍**
 
 并非所有Markdown应用程序都支持扩展语法元素。
 
@@ -42,6 +47,21 @@ markdown扩展语法介绍
 }
 ```
 
+## 显示行数
+
+```javascript {.line-numbers}
+function add(x, y) {
+  return x + y
+}
+```
+## 高亮代码行数
+```ruby {highlight=2}
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+
 # 【脚注】
 
 脚注使您可以添加注释和参考，而不会使文档正文混乱。
@@ -70,17 +90,41 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 - [ ] Update the website
 - [ ] Contact the media
 
-# 【Emoji】
+# 【Emoji & Font-Awesome】
+
+## Emoji
 有两种方法可以将表情符号添加到Markdown文件中：将表情符号复制并粘贴到Markdown格式的文本中，或者键入emoji shortcodes。
 
 在大多数情况下，您可以简单地从[Emojipedia](https://emojipedia.org/)等来源复制表情符号并将其粘贴到文档中。 
 
 一些Markdown应用程序允许您通过键入表情符号短代码来插入表情符号：
-That is so funny! :joy:
+例如：
+:joy:
+:rocket:
+:muscle:
 
 参考: `emoji.md`文件，或者[Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
 
-但请记住，表情符号简码因应用程序而异。
+Emoji & Font-Awesome只适用于 markdown-it parser 而不适用于 pandoc parser。
+缺省下是启用的。你可以在插件设置里禁用此功能。
+
+## Font-Awesome
+
+示例如下：
+
+:fa-telegram:
+:fa-car:
+:fa-skype:
+
+# 【上下标】
+
+注意，vscode自带的markdown预览功能不支持这里的一些特性。
+
+上： 30^th^
+下：H~2~O
+
+# 【标记】
+==marked==
 
 # 【数学】
 
@@ -94,7 +138,7 @@ That is so funny! :joy:
 
 **行内显示**
 
-(1) $ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $......(2) $ f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz $
+(1) $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$.................(2) $f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz$
 
 **块显示**
 $$ \vec{\nabla} \times \vec{F} =
@@ -130,3 +174,32 @@ $$\begin{pmatrix}  a & b \\ c & d \end{pmatrix}$$
 $$\begin{bmatrix}  a & b \\ c & d \end{bmatrix}$$
 
 $$\begin{vmatrix}  a & b \\ c & d \end{vmatrix}$$
+
+# 【图像】
+
+Markdown Preview Enhanced 内部支持 `flow charts`, `sequence diagrams`, `mermaid`, `PlantUML`, `WaveDrom`, `GraphViz`，`Vega & Vega-lite`，`Ditaa` 图像渲染。
+
+例如：
+
+```mermaid
+graph LR
+A --> B;
+B --> C;
+C --> A;
+
+```
+
+# 【TOC】
+Markdown Preview Enhanced 支持你在 markdown 文件中创建 TOC。 
+
+你可以通过 `cmd-shift-p` 然后选择 Markdown Preview Enhanced: Create Toc 命令来创建 TOC。
+
+# 【pandoc】
+
+安装[pandoc](https://github.com/jgm/pandoc/releases)。
+windows下载绿色压缩包，并添加路径设置，并控制是否使用Pandoc Parser。
+
+```json
+"markdown-preview-enhanced.pandocPath": "path\\to\\pandoc.exe",
+"markdown-preview-enhanced.usePandocParser": false
+```

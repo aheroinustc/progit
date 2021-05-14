@@ -1,6 +1,19 @@
-markdown基本语法介绍
+本文档基于[markdownguide](https://www.markdownguide.org/)上面的内容。
+本文档使用的编辑器是`vscode`。
+本文档使用的markdown插件是[Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)，
+同时参考了插件的[文档](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)。
 
-本文档基于<https://www.markdownguide.org/>上面的内容。
+vscode配置：
+
+```json  settings.json
+   
+   /*markdown插件相关设置*/
+    "markdown-preview-enhanced.mathRenderingOption": "MathJax",
+    "markdown-preview-enhanced.previewTheme": "vue.css",
+
+```
+
+**markdown的基本语法介绍**
 
 # 【标题】
 
@@ -24,7 +37,7 @@ from now on.
 # 【换行】
 请以两个或多个空格结束一行，然后键入回车即可。
 
-This is the first line.  
+This is the first line.   
 And this is the second line.
 
 
