@@ -135,10 +135,11 @@ Emoji & Font-Awesome只适用于 markdown-it parser 而不适用于 pandoc parse
 
 默认的KaTeX 拥有比 MathJax 更快的性能，但是它却少了很多 MathJax 拥有的特性。
 
+通过命令面板Markdown Preview Enhanced: Open Mathjax Config打开 MathJax 设置文件。
 
 **行内显示**
 
-(1) $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$.................(2) $f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz$
+(1) $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$.........(2) $f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz$
 
 **块显示**
 $$ \vec{\nabla} \times \vec{F} =
