@@ -139,7 +139,8 @@ Emoji & Font-Awesome只适用于 markdown-it parser 而不适用于 pandoc parse
 
 **行内显示**
 
-(1) $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$.........(2) $f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz$
+1. $ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $   
+2. $ f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz $
 
 **块显示**
 $$ \vec{\nabla} \times \vec{F} =
@@ -152,7 +153,7 @@ $$
            X^i \left( \frac{\partial Y^k}{\partial x^i} + \Gamma_{im}^k Y^m \right)
 $$
 $$
- \int_D ({\nabla\cdot} F)dV=\int_{\partial D} F\cdot ndS 
+ \int_D (\mathbf{\nabla} \cdot \mathbf{F})dV=\int_{\partial D} \mathbf{F}\cdot \mathbf{n}dS 
 $$
 $$
 \sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^N (x_i -\mu)^2} 
