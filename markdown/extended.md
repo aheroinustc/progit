@@ -139,8 +139,11 @@ Emoji & Font-Awesome只适用于 markdown-it parser 而不适用于 pandoc parse
 
 **行内显示**
 
-1. $ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $   
-2. $ f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz $
+1. $ x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a} $
+
+2. $ f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz $
+
+3. \( \iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz \)
 
 **块显示**
 $$ \vec{\nabla} \times \vec{F} =
@@ -173,9 +176,9 @@ $$\begin{matrix}  a & b \\ c & d  \end{matrix}$$
 
 $$\begin{pmatrix}  a & b \\ c & d \end{pmatrix}$$
 
-$$\begin{bmatrix}  a & b \\ c & d \end{bmatrix}$$
+$$ \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
 
-$$\begin{vmatrix}  a & b \\ c & d \end{vmatrix}$$
+\[ \begin{vmatrix} a & b\\ c & d  \end{vmatrix} \]
 
 # 【图像】
 
