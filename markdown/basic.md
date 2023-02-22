@@ -1,19 +1,13 @@
-本文档基于[markdownguide](https://www.markdownguide.org/)上面的内容。
-本文档使用的编辑器是`vscode`。
-本文档使用的markdown插件是[Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)，
+本文档基于[Markdown Guide](https://www.markdownguide.org/)上面的内容。
+
+本文档使用的编辑器是`VS Code`。
+
+本文档使用的markdown插件是`Markdown Preview Enhanced`。
+
 同时参考了插件的[文档](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)。
 
-vscode配置：
 
-```json  settings.json
-   
-   /*markdown插件相关设置*/
-    "markdown-preview-enhanced.mathRenderingOption": "MathJax",
-    "markdown-preview-enhanced.previewTheme": "vue.css",
-
-```
-
-**markdown的基本语法介绍**
+**基本语法**
 
 # 【标题】
 
@@ -102,6 +96,7 @@ This is really***very***important text.
    1. Indented item
    2. Indented item
 4. Fourth item
+5. Fifth item
 
 
 ## 【无序列表】
@@ -128,6 +123,14 @@ This is really***very***important text.
     > A blockquote would look great below the second list item.
 -   And here's the third list item.
 
+## 【混合列表】
+
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
 
 # 【代码块】
 缩进至少四个空格或一个制表符。  
@@ -156,13 +159,13 @@ This is really***very***important text.
 
 **直接展示图片**
 
-![](./tux.png "企鹅")
+![Tux, the Linux mascot](./tux.png "企鹅")
 
 **列表中的图片**
 1. Open the file containing the Linux mascot.
 2. Marvel at its beauty.
    
-    ![](./tux.png)
+    ![Tux, the Linux mascot](./tux.png)
 3. Close the file.
 
 
@@ -183,9 +186,12 @@ This is really***very***important text.
 
 # 【水平分隔线】
 可在一行中用三个及以上的星号、减号、下划线来建立一个分隔线。
+为了兼容性，之前之后留一空白行。
 
 ***
+
 ---
+
 ___
 
 所有这三个的渲染输出看起来都相同。
@@ -198,21 +204,32 @@ ___
 ## 带有标题提示的链接
 [baidu](https://www.baidu.com/  "百度一下，你就知道")
 
-## 展示地址
+## 快速展示URL或者邮箱
 <https://www.google.com/>
+<fake@example.com>
+
+## 格式化链接
+
+I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
 
 ## Reference-style链接
  
 This is the [Markdown Guide][1].
 
-[1]:(https://www.markdownguide.org)
+> In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a [hobbit-hole][2], and that means comfort.
+
+参考放置位置通常是底部。
 
 ## 带有链接的图片
-[![](./tux.png)](https://www.markdownguide.org)
+[![Tux, the Linux mascot](./tux.png)](https://www.markdownguide.org)
 
 
-# 【转义字符】
+# 【转义字符示例】
 
-\* Without the backslash, this would be a bullet in an unordered list.
+\*  \-  \+  \\ \! \|
 
 \`code\`
+
+[1]: https://www.markdownguide.org
+[2]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
