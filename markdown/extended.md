@@ -22,41 +22,6 @@
 
 
 
-# 【围栏代码块】
-
-如果不想使用缩进来产生代码块，可以使用如下风格
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-## 语法高亮
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-## 显示行数
-
-```javascript {.line-numbers}
-function add(x, y) {
-  return x + y
-}
-```
-## 高亮代码行数
-```ruby {highlight=2}
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
 
 
 # 【脚注】

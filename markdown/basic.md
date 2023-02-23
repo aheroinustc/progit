@@ -64,6 +64,7 @@ This text is ___really important___.
 ## 【上/下标】
 
 LV<sup>TM</sup>
+
 LV<sub>TM</sub>
 
 # 【区块引用】
@@ -100,8 +101,8 @@ LV<sub>TM</sub>
 1. First item
 2. Second item
 3. Third item
-   1. Indented item
-   2. Indented item
+    1. Indented item
+    2. Indented item
 4. Fourth item
 5. Fifth item
 
@@ -139,18 +140,18 @@ LV<sub>TM</sub>
     - Indented item
 4. Fourth item
 
-# 【代码块】
-缩进至少四个空格或一个制表符。  
-当它们在列表中时，将它们缩进八个空格或两个制表符。
+# 【引用代码】
 
-**直接展示代码块**
+缩进至少四个空格或一个制表符。当它们在列表中时，将它们缩进八个空格或两个制表符。
+
+## 直接展示代码块
 
     <html>
     <head>
         <title>Test</title>
     </head>
 
-**列表中的代码块**
+## 列表中的代码块
 1.  Open the file.
 2.  Find the following code block on line 21:
 
@@ -161,6 +162,51 @@ LV<sub>TM</sub>
 
 3.  Update the title to match the name of your website.
 
+
+## 使用单反引号\`
+
+使用单反引号可标注句子中的代码或命令。 反引号中的文本不会被格式化。 
+
+Use `git status` to list all new or modified files that haven't yet been committed.
+
+
+## 围栏代码块
+
+如果不想使用缩进来产生代码块，可以使用如下风格:
+
+通过在代码块的前后输入三反引号```，可创建围栏代码块。
+
+我们建议在代码块的前后各留一个空白行，使原始格式更易辨读。
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+要在列表中保留格式，请确保将非围栏代码块缩进八个空格。
+
+**语法高亮**
+
+```java
+ 
+ public class HelloWorld{
+    pubic static void main(String[] args){
+
+    }
+ }
+
+```
+
+**高亮代码行数**
+
+```ruby {highlight=2}
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
 # 【图片】
 
