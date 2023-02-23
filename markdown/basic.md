@@ -6,7 +6,7 @@
 
 - [Getting started with writing and formatting on GitHub](https://docs.github.com/zh/get-started/writing-on-github)
 
-此处出现的语法，已经验证在github上面支持
+此处出现的语法，已经验证在github上面支持。
 
 # 【标题】
 
@@ -30,7 +30,7 @@ from now on.
 # 【换行】
 请以两个或多个空格结束一行，然后键入回车即可。
 
-This is the first line.   
+This is the first line.  
 And this is the second line.
 
 
