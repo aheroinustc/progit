@@ -1,13 +1,12 @@
-本文档基于[Markdown Guide](https://www.markdownguide.org/)上面的内容。
+本文档参考了如下链接：
 
-本文档使用的编辑器是`VS Code`。
+- [Markdown Guide](https://www.markdownguide.org/)。
 
-本文档使用的markdown插件是`Markdown Preview Enhanced`。
+- [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)。
 
-同时参考了插件的[文档](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)。
+- [Getting started with writing and formatting on GitHub](https://docs.github.com/zh/get-started/writing-on-github)
 
-
-**基本语法**
+此处出现的语法，已经验证在github上面支持。
 
 # 【标题】
 
@@ -23,7 +22,6 @@
 要创建段落，请使用空白行分隔一行或多行文本。
 
 I really like using Markdown.
-
 I think I'll use it to format all of my documents
 from now on.
 
