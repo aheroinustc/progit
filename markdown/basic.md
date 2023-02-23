@@ -34,7 +34,7 @@ This is the first line.
 And this is the second line.
 
 
-# 【强调：加粗/倾斜】
+# 【强调】
 
 ## 【加粗】
 I just love **bold text**.
@@ -56,7 +56,15 @@ This text is ***really important***.
 
 This text is ___really important___.
 
-This is really***very***important text.	
+**This is really _very_ important text**.	
+
+## 【删除线】
+~~This was mistaken text~~
+
+## 【上/下标】
+
+LV<sup>TM</sup>
+LV<sub>TM</sub>
 
 # 【区块引用】
 
