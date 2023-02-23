@@ -169,6 +169,14 @@ LV<sub>TM</sub>
 
 Use `git status` to list all new or modified files that haven't yet been committed.
 
+`git for windows`是Git的Windows版本。
+
+`vim`是优秀的linux文本编辑器。
+
+**反引号转义**
+
+``Use `code` in your Markdown file.``
+
 
 ## 围栏代码块
 
@@ -191,23 +199,12 @@ Use `git status` to list all new or modified files that haven't yet been committ
 **语法高亮**
 
 ```java
- 
  public class HelloWorld{
     pubic static void main(String[] args){
 
     }
  }
-
 ```
-
-**高亮代码行数**
-
-```ruby {highlight=2}
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
 # 【图片】
 
 **直接展示图片**
@@ -220,22 +217,6 @@ puts markdown.to_html
    
     ![Tux, the Linux mascot](./tux.png)
 3. Close the file.
-
-
-
-# 【反引号】
-
-要将单词或短语表示为代码，请将其括在反引号（`）中。
-
-`git for windows`是Git的Windows版本。
-
-`vim`是优秀的linux文本编辑器。
-
-**反引号转义**
-
-``Use `code` in your Markdown file.``
-
-
 
 # 【水平分隔线】
 可在一行中用三个及以上的星号、减号、下划线来建立一个分隔线。
@@ -280,9 +261,7 @@ This is the [Markdown Guide][1].
 
 # 【转义字符示例】
 
-\*  \-  \+  \\ \! \|
-
-\`code\`
+\*  \-  \+  \\ \! \|  \`code\`
 
 [1]: https://www.markdownguide.org
 [2]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
