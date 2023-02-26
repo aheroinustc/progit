@@ -240,6 +240,7 @@ ___
 
 ## 快速展示URL或者邮箱
 <https://www.google.com/>
+
 <fake@example.com>
 
 ## 格式化链接
