@@ -252,17 +252,21 @@ This is the *[Markdown Guide](https://www.markdownguide.org)*.
  
 This is the [Markdown Guide][1].
 
-> In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a [hobbit-hole][2], and that means comfort.
+> This site was built using [GitHub Pages][2].
 
 参考放置位置通常是底部。
 
 ## 带有链接的图片
-[![Tux, the Linux mascot](./tux.png)](https://www.markdownguide.org)
+[![Tux, the Linux mascot](./tux.png)][3]
 
+此次使用了图片的相对位置。
 
 # 【转义字符示例】
 
-\*  \-  \+  \\ \! \|  \`code\`
+\*  \-  \+  \\ \! \|  
+
+\`code\`
 
 [1]: https://www.markdownguide.org
-[2]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
+[2]: <https://pages.github.com/>  "GitHub Pages"
+[3]: <https://zh.wikipedia.org/zh/Tux> "Tux"
