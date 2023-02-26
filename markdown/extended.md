@@ -83,11 +83,20 @@ a & b \\
 c & d  
 \end{matrix}$$  
 
-$$\begin{pmatrix}  a & b \\ c & d \end{pmatrix}$$
+$$\begin{pmatrix}  
+a & b \\ 
+c & d 
+\end{pmatrix}$$
 
-$$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
+$$\begin{bmatrix} 
+a & b \\ 
+c & d 
+\end{bmatrix}$$
 
-$$\begin{vmatrix} a & b\\ c & d  \end{vmatrix}$$
+$$\begin{vmatrix} 
+a & b\\ 
+c & d  
+\end{vmatrix}$$
 
 **围栏表达式**
 
