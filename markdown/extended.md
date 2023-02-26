@@ -1,86 +1,71 @@
-**markdown扩展语法介绍**
+这里介绍了一些Github支持的高级格式。
 
-并非所有Markdown应用程序都支持扩展语法元素。
+# 【创建折叠部分】
 
-本文档基于<https://www.markdownguide.org/>上面的内容，同时参考了vs code插件[Markdown Preview Enhanced](https://github.com/shd101wyy/vscode-markdown-preview-enhanced)的功能。
+<details><summary>点击此处展开</summary>
+<p>
 
+#### We can hide anything, even code!
 
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
-# 【删除线】
-~~The world is flat.~~ We now know that the world is round.
+</p>
+</details>
 
-# 【定义列表】
-
-函数
-: *一般的，在一个变化过程中，假设有两个变量`x`、`y`，如果对于任意一个`x`都有唯一确定的一个`y`和它对应，那么就称x是自变量，`y`是`x`的函数。*
-
-First Term
-: This is the definition of the first term.
-
-Second Term
-: This is one definition of the second term.
-: This is another definition of the second term.
+Markdown 是默认折叠的。
 
 
+# 【创建图表】
 
-# 【Emoji & Font-Awesome】
+可以使用以下三种不同的语法在 Markdown 中创建关系图：`mermaid`、`geoJSON` 和 `topoJSON`、`ASCII STL`。
 
-## Emoji
-有两种方法可以将表情符号添加到Markdown文件中：将表情符号复制并粘贴到Markdown格式的文本中，或者键入emoji shortcodes。
+## 创建 Mermaid 关系图
 
-在大多数情况下，您可以简单地从[Emojipedia](https://emojipedia.org/)等来源复制表情符号并将其粘贴到文档中。 
+Mermaid 是一款受 Markdown 启发的工具，可将文本呈现为关系图。 例如，Mermaid 可以呈现流程图、序列图、饼图等。 有关详细信息，请参阅 [Mermaid 文档](https://mermaid.js.org/config/Tutorials.html)。
 
-一些Markdown应用程序允许直接输入或通过键入表情符号短代码来插入表情符号：
-例如：
+使用 `mermaid` 语言标识符在围栏代码块中添加 Mermaid 语法。
 
-💕⏳⏰😒
+Here is a simple flow chart:
 
-:joy:
-:rocket:
-:muscle:
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 
-参考: [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
+```
 
-Emoji & Font-Awesome只适用于 markdown-it parser 而不适用于 pandoc parser。插件缺省下是启用该解析的。你可以在插件设置里禁用此功能。
+```mermaid
+erDiagram
+          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+          CUSTOMER ||--o{ ORDER : places
+          CUSTOMER ||--o{ INVOICE : "liable for"
+          DELIVERY-ADDRESS ||--o{ ORDER : receives
+          INVOICE ||--|{ ORDER : covers
+          ORDER ||--|{ ORDER-ITEM : includes
+          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 
-## Font-Awesome
+```
 
-示例如下：
+# 【编写数学表达式】
 
-:fa-telegram:
-:fa-skype:
-:fa-twitter:
-:fa-weibo:
-:fa-wechat:
+使用 Markdown 在 GitHub 上显示数学表达式。
 
-# 【上下标】
-
-注意，vscode自带的markdown预览功能不支持这里的一些特性。
-
-上： 30^th^  5^TM^
-下：H~2~O  CaCO~3~
-
-# 【高亮标记】
-==marked==
-
-# 【数学】
-
-这里设置渲染引擎为：
-
-    "markdown-preview-enhanced.mathRenderingOption": "MathJax"
-
-
-默认的KaTeX 拥有比 MathJax 更快的性能，但是它却少了很多 MathJax 拥有的特性。
-
-通过命令面板Markdown Preview Enhanced: Open Mathjax Config打开 MathJax 设置文件。
+GitHub 的数学呈现功能使用 `MathJax`；真是一种基于 `JavaScript` 的开源显示引擎。
 
 **行内显示**
 
-1. $ x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a} $
+$ x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a} $
 
-2. $ f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz $
+$ f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz $
 
-3. \( \iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz \)
+$ \iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz $
 
 **块显示**
 $$ \vec{\nabla} \times \vec{F} =
@@ -88,18 +73,23 @@ $$ \vec{\nabla} \times \vec{F} =
           + \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
           + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k} 
 $$
+
 $$
 (\nabla_X Y)^k = X^i (\nabla_i Y)^k =
            X^i \left( \frac{\partial Y^k}{\partial x^i} + \Gamma_{im}^k Y^m \right)
 $$
+
 $$
  \int_D (\mathbf{\nabla} \cdot \mathbf{F})dV=\int_{\partial D} \mathbf{F}\cdot \mathbf{n}dS 
 $$
+
 $$
 \sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^N (x_i -\mu)^2} 
 $$
 
+
 ```math
+
   \def\arraystretch{1.5}
    \begin{array}{c:c:c}
    a & b & c \\ \hline
@@ -107,6 +97,7 @@ $$
    \hdashline
    g & h & i
 \end{array}
+
 ```
 
 $$\begin{matrix}  a & b \\ c & d  \end{matrix}$$  
@@ -115,22 +106,8 @@ $$\begin{pmatrix}  a & b \\ c & d \end{pmatrix}$$
 
 $$ \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
 
-\[ \begin{vmatrix} a & b\\ c & d  \end{vmatrix} \]
+$$ \begin{vmatrix} a & b\\ c & d  \end{vmatrix} $$
 
-# 【TOC】
-Markdown Preview Enhanced 支持你在 markdown 文件中创建 TOC。 
-
-你可以通过 `cmd-shift-p` 然后选择 Markdown Preview Enhanced: Create Toc 命令来创建 TOC。
-
-# 【pandoc】
-
-可选。安装[pandoc](https://github.com/jgm/pandoc/releases)。
-windows下载绿色压缩包，并添加路径设置，并控制是否使用Pandoc Parser。
-
-```json
-"markdown-preview-enhanced.pandocPath": "path\\to\\pandoc.exe",
-"markdown-preview-enhanced.usePandocParser": false
-```
 
 # 【警示语】
 Markdown不提供直接支持，可以结合区块引用和`Emoji`来实现。
