@@ -78,7 +78,10 @@ $$\sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^N (x_i -\mu)^2}$$
 
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
-$$\begin{matrix}  a & b \\ c & d  \end{matrix}$$  
+$$\begin{matrix}  
+a & b \\ 
+c & d  
+\end{matrix}$$  
 
 $$\begin{pmatrix}  a & b \\ c & d \end{pmatrix}$$
 
