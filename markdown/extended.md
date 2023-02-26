@@ -55,11 +55,14 @@ erDiagram
 
 # 【编写数学表达式】
 
+为了实现数学表达式的清晰传达，GitHub 支持 Markdown 中 LaTeX 格式的数学表达式。
+
 使用 Markdown 在 GitHub 上显示数学表达式。
 
-GitHub 的数学呈现功能使用 `MathJax`；真是一种基于 `JavaScript` 的开源显示引擎。
+GitHub 的数学呈现功能使用 [MathJax](https://www.mathjax.org/)；真是一种基于 `JavaScript` 的开源显示引擎。
 
-**行内显示**
+**内联表达式**
+注意空格。
 
 $x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$
 
@@ -67,39 +70,35 @@ $f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$
 
 $\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$
 
-**块显示**
+**块表达式**
 
-$$
-(\nabla_X Y)^k = X^i (\nabla_i Y)^k =
-           X^i \left( \frac{\partial Y^k}{\partial x^i} + \Gamma_{im}^k Y^m \right)
-$$
+$$(\nabla_X Y)^k = X^i (\nabla_i Y)^k =
+           X^i \left( \frac{\partial Y^k}{\partial x^i} + \Gamma_{im}^k Y^m \right)$$
 
-$$
- \int_D (\mathbf{\nabla} \cdot \mathbf{F})dV=\int_{\partial D} \mathbf{F}\cdot \mathbf{n}dS 
-$$
+$$\int_D (\mathbf{\nabla} \cdot \mathbf{F})dV=\int_{\partial D} \mathbf{F}\cdot \mathbf{n}dS$$
 
-$$
-\sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^N (x_i -\mu)^2} 
-$$
+$$\sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^N (x_i -\mu)^2}$$
 
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+$$\begin{matrix}  a & b \\ c & d  \end{matrix}$$  
+
+$$\begin{pmatrix}  a & b \\ c & d \end{pmatrix}$$
+
+$$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
+
+$$\begin{vmatrix} a & b\\ c & d  \end{vmatrix}$$
+
+**围栏表达式**
 
 ```math
+
 \vec{\nabla} \times \vec{F} =
             \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \mathbf{i}
           + \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
           + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k} 
   
 ```
-
-$$\begin{matrix}  a & b \\ c & d  \end{matrix}$$  
-
-$$\begin{pmatrix}  a & b \\ c & d \end{pmatrix}$$
-
-$$ \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
-
-$$ \begin{vmatrix} a & b\\ c & d  \end{vmatrix} $$
-
-
 # 【警示语】
 Markdown不提供直接支持，可以结合区块引用和`Emoji`来实现。
 
@@ -109,15 +108,10 @@ Markdown不提供直接支持，可以结合区块引用和`Emoji`来实现。
 
 > :bulb: **Tip:** Remember to appreciate the little things in life.
 
-# 【字体颜色】
-Markdown 不允许您更改文本的颜色，但如果您的 Markdown 处理器支持 HTML，则可以使用 HTML 标签。该属性允许您使用颜色的名称或十六进制代码指定字体颜色。
-
-<font color="ff00f6">This text is red!</font>
-
-<p style="color:blue">Make this text blue.</p>
-
 # 【视频快照】
 
 如果您的 Markdown 应用程序支持 HTML，您应该能够通过复制和粘贴YouTube等视频网站提供的 HTML 代码，在 Markdown 文件中嵌入视频。
 
-[![攀登乞力馬扎羅！ 嘴唇被凍傷🇹🇿｜Climb Kilimanjaro｜冒險雷探長｜Lei's adventure](https://img.youtube.com/vi/Oo9uMA2FL6I/0.jpg)](https://www.youtube.com/watch?v=Oo9uMA2FL6I)
+[![冒險雷探長｜Lei's adventure](https://img.youtube.com/vi/Oo9uMA2FL6I/0.jpg)][1]
+
+[1]: <https://www.youtube.com/watch?v=Oo9uMA2FL6I> "冒險雷探長"
