@@ -59,13 +59,13 @@ erDiagram
 
 使用 Markdown 在 GitHub 上显示数学表达式。
 
-GitHub 的数学呈现功能使用 [MathJax](https://www.mathjax.org/)；真是一种基于 `JavaScript` 的开源显示引擎。
+GitHub 的数学呈现功能使用 [MathJax](https://www.mathjax.org/)；是一种基于 `JavaScript` 的开源显示引擎。
 
 **内联表达式**
 
 注意空格。
 
-$x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$, $f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$, $\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$
+(1) $x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$; (2) $f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$; (3) $\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$.
 
 **块表达式**
 
@@ -119,7 +119,7 @@ Markdown不提供直接支持，可以结合区块引用和`Emoji`来实现。
 
 # 【视频快照】
 
-如果您的 Markdown 应用程序支持 HTML，您应该能够通过复制和粘贴YouTube等视频网站提供的 HTML 代码，在 Markdown 文件中嵌入视频。
+如果Markdown应用程序支持HTML，您应该能够通过复制和粘贴YouTube等视频网站提供的HTML代码，在 Markdown文件中嵌入视频。此处展示快照。
 
 [![冒險雷探長｜Lei's adventure](https://img.youtube.com/vi/Oo9uMA2FL6I/0.jpg)][1]
 
