@@ -333,4 +333,4 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 [1]: https://www.markdownguide.org
 [2]: <https://pages.github.com/>  "GitHub Pages"
 [3]: <https://zh.wikipedia.org/zh/Tux> "Tux"
-[4]: https:www.baidu.com
+[4]: https://www.baidu.com
