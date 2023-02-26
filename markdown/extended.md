@@ -62,13 +62,10 @@ erDiagram
 GitHub 的数学呈现功能使用 [MathJax](https://www.mathjax.org/)；真是一种基于 `JavaScript` 的开源显示引擎。
 
 **内联表达式**
+
 注意空格。
 
-$x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$
-
-$f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$
-
-$\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$
+$x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$, $f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$, $\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$
 
 **块表达式**
 
