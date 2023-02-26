@@ -327,14 +327,10 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 | Syntax      | Description | Test Text     |
 |:---         |:---:        |---:           |
 | Header\|    | **Title**   | a&#124;b      |
-| Paragraph   | [baidu][1]  | `vim`         |
+| Paragraph   | [baidu][4]  | `vim`         |
 
-[1]: https:www.baidu.com
-
-
-# 【标题id】
-[跳转到标题：表格](#table)
 
 [1]: https://www.markdownguide.org
 [2]: <https://pages.github.com/>  "GitHub Pages"
 [3]: <https://zh.wikipedia.org/zh/Tux> "Tux"
+[4]: https:www.baidu.com
