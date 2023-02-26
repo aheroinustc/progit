@@ -61,18 +61,13 @@ GitHub 的数学呈现功能使用 `MathJax`；真是一种基于 `JavaScript` �
 
 **行内显示**
 
-$ x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a} $
+$x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$
 
-$ f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz $
+$f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$
 
-$ \iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz $
+$\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$
 
 **块显示**
-$$ \vec{\nabla} \times \vec{F} =
-            \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \mathbf{i}
-          + \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
-          + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k} 
-$$
 
 $$
 (\nabla_X Y)^k = X^i (\nabla_i Y)^k =
@@ -89,15 +84,11 @@ $$
 
 
 ```math
-
-  \def\arraystretch{1.5}
-   \begin{array}{c:c:c}
-   a & b & c \\ \hline
-   d & e & f \\
-   \hdashline
-   g & h & i
-\end{array}
-
+\vec{\nabla} \times \vec{F} =
+            \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \mathbf{i}
+          + \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
+          + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k} 
+  
 ```
 
 $$\begin{matrix}  a & b \\ c & d  \end{matrix}$$  
