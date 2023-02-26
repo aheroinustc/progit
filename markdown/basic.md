@@ -140,6 +140,13 @@ LV<sub>TM</sub>
     - Indented item
 4. Fourth item
 
+
+# 【任务清单】
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+
 # 【引用代码】
 
 缩进至少四个空格或一个制表符。当它们在列表中时，将它们缩进八个空格或两个制表符。
@@ -259,13 +266,74 @@ This is the [Markdown Guide][1].
 ## 带有链接的图片
 [![Tux, the Linux mascot](./tux.png)][3]
 
-此次使用了图片的相对位置。
+此次使用了图片的相对位置。或者直接从互联网引用：
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
 
 # 【转义字符示例】
 
 \*  \-  \+  \\ \! \|  
 
 \`code\`
+
+# 【脚注】
+
+脚注使您可以添加注释和参考，而不会使文档正文混乱。
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code:
+
+    Indent paragraphs to include them in the footnote.
+    
+    `{ my code }`
+    
+    Add as many paragraphs as you like.
+
+# 表格 { #table }
+
+可以使用竖线 `|` 和连字符 `-` 创建表。
+
+连字符用于创建每列的标题，而竖线用于分隔每列。
+
+| Syntax   | Description |
+|-------   |-------      |
+| Header   | Title       |
+| Paragraph| Text        |
+
+无需在列内准确对齐。 标题行的第一列中必须至少有三个横线。
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+## 对齐|格式化
+
+可以在表格中使用格式，例如链接、内联代码块和文本样式：
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
+可以通过在标题行中连字符的左侧、右侧或两侧添加冒号 `:`，来靠左、靠右或居中对齐列中的文本。
+
+若要包含竖线 `|` 作为单元格中的内容，请在竖线前使用 `\`
+
+| Syntax      | Description | Test Text     |
+|:---         |:---:        |---:           |
+| Header\|    | **Title**   | a&#124;b      |
+| Paragraph   | [baidu][1]  | `vim`         |
+
+[1]: https:www.baidu.com
+
+
+# 【标题id】
+[跳转到标题：表格](#table)
 
 [1]: https://www.markdownguide.org
 [2]: <https://pages.github.com/>  "GitHub Pages"

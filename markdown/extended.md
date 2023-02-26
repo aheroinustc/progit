@@ -4,45 +4,7 @@
 
 本文档基于<https://www.markdownguide.org/>上面的内容，同时参考了vs code插件[Markdown Preview Enhanced](https://github.com/shd101wyy/vscode-markdown-preview-enhanced)的功能。
 
-# 表格 { #table }
 
-| Syntax   | Description |
-| ---------| ----------- |
-| Header   | Title       |
-| Paragraph| Text        |
-
-## 对齐|格式化
-
-| Syntax      | Description | Test Text     |
-| :-----------|:-----------:|--------------:|
-| Header\|    | **Title**   | a&#124;b      |
-| Paragraph   | [baidu][1]  | `vim`         |
-
-[1]: https:www.baidu.com
-
-
-
-
-
-# 【脚注】
-
-脚注使您可以添加注释和参考，而不会使文档正文混乱。
-
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
-
-[^1]: This is the first footnote.
-
-[^bignote]: Here's one with multiple paragraphs and code:
-
-    Indent paragraphs to include them in the footnote.
-    
-    `{ my code }`
-    
-    Add as many paragraphs as you like.
-
-
-# 【标题id】
-[跳转到标题：表格](#table)
 
 # 【删除线】
 ~~The world is flat.~~ We now know that the world is round.
@@ -59,10 +21,7 @@ Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
 
-# 【任务清单】
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+
 
 # 【Emoji & Font-Awesome】
 
