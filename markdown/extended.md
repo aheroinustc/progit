@@ -57,7 +57,7 @@ erDiagram
 
 为了实现数学表达式的清晰传达，GitHub 支持 Markdown 中 LaTeX 格式的数学表达式。
 
-使用 Markdown 在 GitHub 上显示数学表达式。
+使用Markdown在GitHub上显示数学表达式。
 
 GitHub 的数学呈现功能使用 [MathJax](https://www.mathjax.org/)；是一种基于 `JavaScript` 的开源显示引擎。
 
@@ -65,7 +65,7 @@ GitHub 的数学呈现功能使用 [MathJax](https://www.mathjax.org/)；是一�
 
 注意空格。
 
-i) $x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$ ; ii) $f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$; iii) $\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$.
+$(\mathrm{i})\ x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$ ; $(\mathrm{ii})\ f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$ ; $(\mathrm{iii})\ \iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$.
 
 **块表达式**
 
