@@ -65,7 +65,7 @@ GitHub 的数学呈现功能使用 [MathJax](https://www.mathjax.org/)；是一�
 
 注意空格。
 
-(1) $x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$; (2) $f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$; (3) $\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$.
+i) $x=\frac{-b\pm \sqrt{b^{2} -4ac}}{2a}$ ; ii) $f(a) = {1\over 2\pi i} \oint \frac{f(z)}{z-a}dz$; iii) $\iiint _{V} f( x,y,z) dV = \iiint\limits _{V} f( x,y,z) dxdydz$.
 
 **块表达式**
 
@@ -76,21 +76,22 @@ $$\int_D (\mathbf{\nabla} \cdot \mathbf{F})dV=\int_{\partial D} \mathbf{F}\cdot 
 
 $$\sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^N (x_i -\mu)^2}$$
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+$$\begin{pmatrix}  
+  a_{11} & \cdots & a_{1n} \\  
+  \vdots & \ddots & \vdots \\  
+  a_{m1} & \cdots & a_{mn}  
+\end{pmatrix}$$
 
 $$\begin{matrix}  
 a & b \\ 
 c & d  
 \end{matrix}$$  
 
-$$\begin{pmatrix}  
-a & b \\ 
-c & d 
-\end{pmatrix}$$
-
-$$\begin{bmatrix} 
-a & b \\ 
-c & d 
+$$O = \begin{bmatrix}  
+  0 & 0 & \cdots & 0 \\  
+  0 & 0 & \cdots & 0 \\  
+  \vdots & \vdots & \ddots & \vdots \\  
+  0 & 0 & \cdots & 0  
 \end{bmatrix}$$
 
 $$\begin{vmatrix} 
@@ -108,6 +109,16 @@ c & d
           + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k} 
   
 ```
+
+```math
+\begin{array}{l}  
+  \nabla \cdot \mathbf{D} =\rho _f \\  
+  \nabla \cdot \mathbf{B} = 0 \\  
+  \nabla \times  \mathbf{E} = -\cfrac{\partial \mathbf{B}}{\partial t }  \\  
+  \nabla \times  \mathbf{H} = \mathbf{J}_f +  \cfrac{\partial \mathbf{D}}{\partial t }   
+\end{array} 
+```
+
 # 【警示语】
 Markdown不提供直接支持，可以结合区块引用和`Emoji`来实现。
 
