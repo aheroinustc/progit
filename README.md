@@ -1,7 +1,7 @@
 # progit
 For learning Pro Git book, written by Scott Chacon and Ben Straub.
 
-Version 2.1.15, 2018-07-27
+Version 2.1.61, 2022-03-17
 
 基于中文版本学习，参考英文版本以及其他网络资源。
 
