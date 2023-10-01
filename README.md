@@ -22,11 +22,9 @@ Version 2.1.15, 2018-07-27
     
 首次`push`时，因为采取的是https协议，会跳出github的登录验证，
 
-因为众所周知的原因，需要挂上代理登录，
+因为众所周知的原因，需要挂上代理登录，如果有开启账户二次验证，请输入验证码。
 
-如果有开启账户二次验证，请输入验证码。
-
-可以在Github设置/Developer settings/Personal access tokens中管理访问授权，
+可以在Github设置-->Developer Settings--> Personal access tokens中管理访问授权。
 
 需要时删除无效的tokens。
 
